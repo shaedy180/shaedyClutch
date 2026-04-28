@@ -158,7 +158,7 @@ public class ShaedyClutchAnnouncer : BasePlugin
         foreach (var p in allPlayers)
         {
             if (p != clutcher && p.IsValid && !p.IsBot)
-                HudManager.Show(p.SteamID, html, HudPriority.Critical, 4);
+                HudManagerProxy.Show(p.SteamID, html, HudManagerProxy.Priority.Critical, 4);
         }
 
         clutcher.PrintToChat(ChatPrefix + " " + ChatColors.Red + "YOU ARE ALONE! " + ChatColors.White + "Win this 1v" + enemyCount + "!");
@@ -218,7 +218,7 @@ public class ShaedyClutchAnnouncer : BasePlugin
         html += "<div style='font-size:22px;font-weight:bold;color:" + timerColor + ";text-shadow:0 0 10px " + timerColor + ";margin-top:4px;'>" + timeStr + "</div>";
         html += "</div></body></html>";
 
-        HudManager.Show(clutcher.SteamID, html, HudPriority.Critical, 1);
+        HudManagerProxy.Show(clutcher.SteamID, html, HudManagerProxy.Priority.Critical, 1);
 
         var allPlayers = Utilities.GetPlayers();
         foreach (var p in allPlayers)
@@ -229,7 +229,7 @@ public class ShaedyClutchAnnouncer : BasePlugin
                 specHtml += "<div style='font-size:12px;color:#888;letter-spacing:2px;'><span style='color:#4ade80;'>" + clutcher.PlayerName + "</span> clutching 1v" + enemies + "</div>";
                 specHtml += "<div style='font-size:18px;font-weight:bold;color:" + timerColor + ";margin-top:2px;'>" + timeStr + "</div>";
                 specHtml += "</div></body></html>";
-                HudManager.Show(p.SteamID, specHtml, HudPriority.Critical, 1);
+                HudManagerProxy.Show(p.SteamID, specHtml, HudManagerProxy.Priority.Critical, 1);
             }
         }
     }
@@ -249,7 +249,7 @@ public class ShaedyClutchAnnouncer : BasePlugin
         foreach (var p in allPlayers)
         {
             if (p.IsValid && !p.IsBot)
-                HudManager.Show(p.SteamID, html, HudPriority.Critical, 4);
+                HudManagerProxy.Show(p.SteamID, html, HudManagerProxy.Priority.Critical, 4);
         }
     }
 

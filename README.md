@@ -12,7 +12,7 @@ A CounterStrikeSharp plugin that announces and tracks 1vX clutch situations.
 
 ## Dependencies
 
-- [shaedyHudManager](https://github.com/shaedy180/shaedyHudManager) - Centralized HUD overlay manager (must be installed alongside this plugin)
+- [shaedyHudManager](https://github.com/shaedy180/shaedyHudManager) - Centralized HUD overlay manager (must be installed alongside this plugin, connects via runtime reflection)
 
 ## Installation
 
