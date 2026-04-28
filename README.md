@@ -1,13 +1,18 @@
-# shaedy Clutch Announcer
+# shaedy Clutch
 
-A CounterStrikeSharp plugin that detects and announces clutch situations.
+A CounterStrikeSharp plugin that announces and tracks 1vX clutch situations.
 
 ## Features
 
-- Detects 1vX situations when one player is left alive against multiple enemies
-- Notifies the clutching player with a personal message
-- Announces the clutch attempt to all other players
-- Announces successful clutch wins to the server
+- Detects 1vX clutch situations automatically
+- Dramatic center-screen announcement when a clutch starts
+- Real-time HUD timer showing enemy count, time remaining, and player name
+- Clutch result announcement at round end
+- Bomb defuse/explode events tracked for clutch win determination
+
+## Dependencies
+
+- [shaedyHudManager](https://github.com/shaedy180/shaedyHudManager) - Centralized HUD overlay manager (must be installed alongside this plugin)
 
 ## Installation
 
@@ -15,7 +20,7 @@ Drop the plugin folder into your CounterStrikeSharp `plugins` directory.
 
 ## Configuration
 
-No config needed. Fully automatic.
+No config needed.
 
 ## Support
 
